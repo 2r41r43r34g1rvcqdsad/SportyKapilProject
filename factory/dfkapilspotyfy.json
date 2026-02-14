@@ -1,0 +1,9 @@
+{
+	"name": "dfkapilspotyfy",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "66013636-9588-4400-ad83-d932e216a77a",
+		"tenantId": "f9dd6bb2-d3aa-464a-bfdf-1ba18418b6e0"
+	}
+}
