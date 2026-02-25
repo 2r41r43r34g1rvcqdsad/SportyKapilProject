@@ -1,0 +1,9 @@
+{
+	"name": "ecommersedatafactorybykapil",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cfa22350-2616-4c8f-8e75-657f46f0ee6a",
+		"tenantId": "f9dd6bb2-d3aa-464a-bfdf-1ba18418b6e0"
+	}
+}
