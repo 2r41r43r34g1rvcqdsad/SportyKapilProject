@@ -5,11 +5,27 @@
 			"referenceName": "AzureDataLakeStorage_sink",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"ecommmerse_sink_folder": {
+				"type": "String"
+			},
+			"ecommerse_file_name": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().ecommerse_file_name",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().ecommmerse_sink_folder",
+					"type": "Expression"
+				},
 				"fileSystem": "bronze"
 			},
 			"compressionCodec": "snappy"
