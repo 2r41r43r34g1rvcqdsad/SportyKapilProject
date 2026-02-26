@@ -5,12 +5,20 @@
 			"referenceName": "ecommerce",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"for_each_dynamic": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "/2r41r43r34g1rvcqdsad/SportyKapilProject/main/archive"
+				"relativeUrl": {
+					"value": "@dataset().for_each_dynamic",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
