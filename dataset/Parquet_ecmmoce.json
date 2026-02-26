@@ -1,0 +1,19 @@
+{
+	"name": "Parquet_ecmmoce",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage_sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
